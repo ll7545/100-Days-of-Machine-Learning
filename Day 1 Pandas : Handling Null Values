@@ -1,0 +1,22 @@
+#replacing null values with the median
+
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+
+flight_median = df["flight total"].median()
+
+df["Flight Totsl"].fillna(flight_median, inplace = True)
+
+print(df.to_string())
+
+
+#Drop null values 
+
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+
+df.dropna(inplace = True)
+
+print(df.to_string())
