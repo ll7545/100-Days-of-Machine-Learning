@@ -1,0 +1,14 @@
+# Scatter plot 
+import pandas as pd
+
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('flightlog.csv')
+
+df.plot(kind = 'scatter', x = 'airline', y = 'number of flights')
+
+plt.show()
+
+#histogram
+
+df["Number of flights"].plot(kind = 'hist')
