@@ -1,0 +1,6 @@
+import pandas as pd 
+
+flights = [5,8,9]
+dataset = pd.Series(flights, index = ['Delta', 'American Airlines', 'United Arilines'])
+
+print(dataset)
