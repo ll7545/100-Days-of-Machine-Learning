@@ -1,0 +1,10 @@
+import pandas as pd 
+
+dataset = {
+    'airlines' : ['Delta', 'American Airlines', 'United Arilines'],
+    'fligh ttotal' : [5, 7, 9]
+}
+
+df = pd.DataFrame(dataset)
+
+print(df)
