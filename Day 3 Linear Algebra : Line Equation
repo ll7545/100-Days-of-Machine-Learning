@@ -1,0 +1,41 @@
+#creating the plane 
+
+def _init_(self,data): 
+      self.first, self.secon = data 
+      
+#slope 
+def slope(self):
+    (x1, y1), (x2, y2) = self.first, self.second
+    try: 
+          return(float(y2) - y1) / (float(x2) - x1) 
+    except ZeroDivisionError: 
+            return None 
+            
+#finding the y - intercept 
+
+def yintercept(self, slope):
+    if slope != None: 
+        x,y = self.first
+        return y - slope * x 
+    else: 
+        return None 
+
+def solving_for_y(self, x, slope, yintercept):
+            if slope != None and yintercept != None:
+                    return float(slope) * x + float(yintercept)
+            else:
+                    raise Exception('Can not solve on a vertical line')
+
+def solving_for_x(self, y, slope, yintercept):
+            if slope != 0 and slope:
+                    return float((y - float(yintercept))) / float(slope)
+            else:
+                    raise Exception('Can not solve on a horizontal line')
+            
+data = ((1,1), (2,3))
+
+line = Line(data)
+
+m = line.slope()
+
+print m 
