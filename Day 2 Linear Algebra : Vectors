@@ -1,0 +1,9 @@
+import numpy as np 
+row_vector = np.array([2,4,6,8])
+print(row_vector)
+column_vector = np.array([[4],
+                           [8],
+                           [12],
+                           [16]])
+print(column_vector)
+
