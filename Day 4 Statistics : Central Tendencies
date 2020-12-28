@@ -1,0 +1,14 @@
+import numpy as np 
+from scipy import stats
+
+data = [25,30,35,35,40,45,50]
+
+mean_data = np.mean(data)
+print(mean_data)
+
+median_data = np.median(data)
+print(median_data)
+
+mode_data = stats.mode(data)
+print(mode_data)
+
