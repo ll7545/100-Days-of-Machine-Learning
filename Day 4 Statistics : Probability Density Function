@@ -1,0 +1,11 @@
+#A histogram is used to visually represent the observations of a Probability Density Function(PDF)
+
+from matplotlib import pyplot 
+from numpy.random import norma; 
+
+#generate random sample data
+random_sample = normal(size = 100)
+
+#Creating the histogram 
+pyplot.hist(random_sample, bins = 10)
+pyplot.show()
