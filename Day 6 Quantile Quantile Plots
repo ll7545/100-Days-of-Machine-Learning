@@ -1,0 +1,11 @@
+#Test to see if two sets of data come from the same distribution 
+import numpy as np
+import pylab
+import scipy.stats as stats
+
+#sets plot measurements
+plot = np.random.normal(loc = 20, scale = 5, size = 100) 
+
+#creating the plot
+stats.probplot(plot, dist = "norm', plot=pylab)
+pylab.show()
