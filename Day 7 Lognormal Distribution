@@ -1,0 +1,20 @@
+from scipy.stats import lognorm   
+import numpy as np 
+
+function = lognorm.function 
+a, b = 4.32, 3.18
+rv = lognorm(a, b)  
+    
+print ("RV : \n", rv)  
+
+
+quantile = np.arange (0.01, 1, 0.1)  
+  
+# Random Variates  
+R = lognorm.rvs(a, b)  
+print ("Random Variates : \n", R)  
+  
+# PDF  
+R = lognorm.pdf(a, b, quantile)  
+print ("\nProbability Distribution : \n", R)
+print ("\nProbability Distribution : \n", R)  
